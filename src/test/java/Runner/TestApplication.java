@@ -10,16 +10,15 @@ import utilities.ExtentManager;
 import utilities.ExtentTestManager;
 
 @CucumberOptions(features = {//"src/test/java/feature_IIS" , 
-		"src/test/java/IIS_features/iisTradeDeal1.feature"},
+		"src/test/java/"},
                 glue = "stepdefinitions",
                 //monochrome=false, //to make steps in color
                 plugin = { "pretty",
                            "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                            "rerun:ReRunScenarios/FailedReRun.txt"}
                //dryRun = true //to chek compilation errors                                      
-            //   , tags=  //"@AT_IFC_019_01_DBQ or @AT_IFC_019_DBQ or @AT_IFC_020_01_DBQ or @AT_IFC_020_DBQ"
-            		   //"@IslamicFinanceCalculator"
-            		//   "@AT_ABC_01_01"
+               , tags= 
+            		  "@AT_test02"
 )
 public class TestApplication extends AbstractTestNGCucumberTests {
 	/*.

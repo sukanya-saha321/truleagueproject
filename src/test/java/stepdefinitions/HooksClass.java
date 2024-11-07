@@ -13,7 +13,7 @@ import com.aventstack.extentreports.Status;
 
 import dataProvider.ExcelData;
 import dataProvider.ExcelTest;
-import helper.PopupHandler;
+
 import helper.ScreenshotHelper;
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -32,7 +32,7 @@ public class HooksClass extends BaseClass {
 
 	ScreenshotHelper screenshotHelper = new ScreenshotHelper(driver);
 
-	PopupHandler popupHandler;
+	
 
 	@Before
 	public void browserSetup(Scenario scenario) throws IOException {
