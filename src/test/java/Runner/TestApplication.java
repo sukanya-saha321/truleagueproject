@@ -18,7 +18,7 @@ import utilities.ExtentTestManager;
                            "rerun:ReRunScenarios/FailedReRun.txt"}
                //dryRun = true //to chek compilation errors                                      
                , tags= 
-            		  "@test2"
+            		  "@AT_AMD_01"
 )
 public class TestApplication extends AbstractTestNGCucumberTests {
 	/*.
