@@ -13,7 +13,7 @@ public static void main(String[] args) throws InterruptedException {
 	ChromeOptions options = new ChromeOptions();
 	options.addArguments("--remote-allow-origins=*");
 	WebDriver driver = new ChromeDriver(options);
-	driver.get(config.getFMSApplicationUrl());
+	driver.get(config.gettruleagueApplicationUrl());
 	driver.manage().window().maximize();
 	Thread.sleep(5000);
 	driver.quit();

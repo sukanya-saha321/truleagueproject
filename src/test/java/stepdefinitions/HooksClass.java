@@ -11,8 +11,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.aventstack.extentreports.Status;
 
-import dataProvider.ExcelData;
-import dataProvider.ExcelTest;
+
 
 import helper.ScreenshotHelper;
 import io.cucumber.java.After;
@@ -24,11 +23,11 @@ import utilities.ExtentTestManager;
 
 public class HooksClass extends BaseClass {
 	WebDriver driver;
-	String path = System.getProperty("user.dir") + "\\Testdata\\DBQ_IIS_testdata.xlsx";
-	ExcelData testExecution = new ExcelData(path, "TestExecution", "TestCaseID");
+	String path = System.getProperty("user.dir") + "\\Testdata";
+	
 	Map<String, String> testExecutionData;
-	ExcelTest excelTest = new ExcelTest(path, "TestExecution", "TestCaseID");
-	List<String> testCaseTagsFromExcel = excelTest.getTestCaseTagsfromExcel();
+	
+
 
 	ScreenshotHelper screenshotHelper = new ScreenshotHelper(driver);
 
